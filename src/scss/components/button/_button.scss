@@ -1,0 +1,13 @@
+$border-radius: 4px;
+
+.button {
+  box-sizing: border-box;
+
+  padding: 12px 24px;
+
+  font-size: 20px;
+  font-weight: $weight-Medium;
+
+  cursor: pointer;
+  outline: none;
+}

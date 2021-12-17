@@ -1,0 +1,18 @@
+/* stylelint-disable scss/dollar-variable-empty-line-before */
+$background: transparent;
+$background--hover: #626262;
+
+$border: 2px solid $palette-white;
+$border--hover: #b1b1b1;
+
+.button-outline {
+  background-color: $background;
+  border: $border;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: $background--hover;
+      border-color: $border--hover;
+    }
+  }
+}

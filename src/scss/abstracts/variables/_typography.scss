@@ -9,10 +9,15 @@ $weight-Bold: 700;
 $weight-ExtraBold: 800;
 $weight-Black: 900;
 
-// Размеры шрифта
-$font-size__text--large: 18px;
-$font-size__text--regular: 16px;
-$font-size__text--small: 14px;
+// Размеры шрифта для заголовков
+$font-size__title--large: 76px;
+$font-size__title--regular: 48px;
+$font-size__title--small: 28px;
+
+// Размеры шрифта для текста
+$font-size__text--large: 24px;
+$font-size__text--regular: 18px;
+$font-size__text--small: 16px;
 
 // Межстрочные расстояния
 $line-height__primary: 140%;
