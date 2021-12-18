@@ -16,6 +16,8 @@ html {
 body {
   overflow-x: hidden;
   font-size: 1rem;
+
+  background-color: $body-background;
 }
 
 /**
@@ -31,13 +33,13 @@ body {
 }
 
 ::-moz-selection {
-  background: #b3d4fc;
   text-shadow: none;
+  background: #b3d4fc;
 }
 
 ::selection {
-  background: #b3d4fc;
   text-shadow: none;
+  background: #b3d4fc;
 }
 
 /*
@@ -62,8 +64,8 @@ textarea {
 }
 
 a {
+  color: $color-text__white;
   text-decoration: none;
-  color: $color-text__black;
 }
 
 ol {

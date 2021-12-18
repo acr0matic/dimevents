@@ -8,6 +8,13 @@ $border-radius: 4px;
   font-size: 20px;
   font-weight: $weight-Medium;
 
-  cursor: pointer;
+  border-radius: $border-radius;
   outline: none;
+
+  cursor: pointer;
+  transition: $transition__component;
+
+  @include breakpoint($breakpoint-laptop--large) {
+    font-size: 18px;
+  }
 }

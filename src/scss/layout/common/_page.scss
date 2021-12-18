@@ -3,5 +3,7 @@
 // -----------------------------------------------------------------------------
 
 .page {
-
+  @include breakpoint($breakpoint-laptop--large) {
+    font-size: 16px;
+  }
 }
