@@ -1,0 +1,76 @@
+#service {
+}
+
+.service {
+  &__item {
+    position: relative;
+    height: 800px;
+    overflow: hidden;
+
+    @include breakpoint($breakpoint-laptop--large) {
+      height: 600px;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        .service__poster {
+          opacity: 0;
+        }
+
+        .service__description {
+          max-height: 200px;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__media {
+    position: relative;
+    height: 100%;
+  }
+
+  &__poster {
+    position: relative;
+    z-index: 1;
+
+    transition: $transition__component;
+  }
+
+  &__video {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+  }
+
+  &__content {
+    position: absolute;
+    z-index: 1;
+    bottom: 45px;
+    left: 50%;
+
+    width: 100%;
+    transform: translateX(-50%);
+
+    text-align: center;
+    transition: $transition__component;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    font-size: $font-size__title--regular;
+
+    @include breakpoint($breakpoint-laptop--large) {
+      font-size: $font-size__title--regular - 8;
+    }
+  }
+
+  &__description {
+    max-height: 0;
+    padding: 0 15px;
+    opacity: 0;
+
+    transition: $transition__component;
+  }
+}
