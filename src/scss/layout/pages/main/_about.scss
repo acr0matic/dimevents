@@ -1,0 +1,26 @@
+#about {
+}
+
+.about {
+  &__item {
+  }
+
+  &__picture {
+    margin-bottom: 30px;
+
+    @include breakpoint($breakpoint-laptop--large) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    @include breakpoint($breakpoint-laptop--large) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__description {
+  }
+}
