@@ -8,6 +8,13 @@
   }
 
   &__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+
+      @include breakpoint($breakpoint-laptop--large) {
+        margin-right: 15px;
+      }
+    }
   }
 
   &__link {
@@ -37,14 +44,8 @@
   }
 
   &--header {
-    .nav__item {
-      &:not(:last-child) {
-        margin-right: 30px;
+  }
 
-        @include breakpoint($breakpoint-laptop--large) {
-          margin-right: 15px;
-        }
-      }
-    }
+  &--footer {
   }
 }

@@ -8,4 +8,14 @@
       }
     }
   }
+
+  &--footer {
+    .logo__image {
+      max-width: 100px;
+
+      @include breakpoint($breakpoint-laptop--large) {
+        max-width: 70px;
+      }
+    }
+  }
 }

@@ -3,9 +3,34 @@
 // -----------------------------------------------------------------------------
 
 #footer {
-
+  padding: 65px 0;
+  background-color: $pallete-gray;
 }
 
 .footer {
+  display: flex;
+  justify-content: space-between;
 
+  &__contact {
+    margin-bottom: 35px;
+
+    font-size: $font-size__title--small;
+    font-weight: $weight-Bold;
+
+    @include breakpoint($breakpoint-laptop--large) {
+      font-size: $font-size__title--small - 4;
+    }
+  }
+
+  &__nav {
+    margin-bottom: 60px;
+  }
+
+  &__info {
+    display: flex;
+
+    & > * {
+      color: $color-text__gray;
+    }
+  }
 }
