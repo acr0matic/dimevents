@@ -1,0 +1,54 @@
+// -----------------------------------------------------------------------------
+// Фрагмент стилизации какой-то секции
+// -----------------------------------------------------------------------------
+
+#hero {
+  position: relative;
+  height: 100vh;
+
+  .container {
+    @include flex($justify: center);
+    height: 100%;
+  }
+}
+
+.hero {
+  &__content {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+
+    width: max-content;
+
+    transform: translate(-50%, -50%);
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__text {
+    @include flex($justify: center);
+    margin-top: 45px;
+  }
+
+  &__description {
+    font-size: $font-size__text--large;
+    font-weight: $weight-SemiBold;
+
+    @include breakpoint($breakpoint-laptop--large) {
+      font-size: $font-size__text--large - 3;
+    }
+  }
+
+  &__video {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+  }
+}

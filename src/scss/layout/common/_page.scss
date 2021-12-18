@@ -3,7 +3,17 @@
 // -----------------------------------------------------------------------------
 
 .page {
+  color: $color-text__white;
+
   @include breakpoint($breakpoint-laptop--large) {
     font-size: 16px;
+  }
+
+  &__title {
+    font-size: $font-size__title--large;
+
+    @include breakpoint($breakpoint-laptop--large) {
+      font-size: $font-size__title--large - 10;
+    }
   }
 }

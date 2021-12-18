@@ -1,0 +1,11 @@
+.section {
+  &__title {
+    font-family: DelaGothicOne, sans-serif;
+    font-weight: $weight-Regular;
+
+    letter-spacing: 5px;
+    line-height: 120%;
+
+    text-transform: uppercase;
+  }
+}
