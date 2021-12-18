@@ -28,5 +28,19 @@
       margin-bottom: 45px;
       transform: none;
     }
+
+    &--large {
+      position: static;
+      margin-bottom: 80px;
+
+      color: $color-text__white;
+      font-size: $font-size__title--regular;
+
+      transform: none;
+    }
+
+    &--center {
+      text-align: center;
+    }
   }
 }

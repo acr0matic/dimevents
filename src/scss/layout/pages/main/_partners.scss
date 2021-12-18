@@ -1,0 +1,35 @@
+.partners {
+  .row > div {
+    display: flex;
+
+    @media (hover: hover) {
+      &:hover {
+        .partners__logo {
+          filter: none;
+          transform: scale(1.15);
+        }
+      }
+    }
+  }
+
+  &__wrapper {
+    max-width: 1200px;
+    margin: 0 auto 100px;
+
+    @include breakpoint($breakpoint-laptop--large) {
+      margin-bottom: 75px;
+    }
+  }
+
+  &__logo {
+    margin: auto;
+
+    backface-visibility: hidden;
+    filter: grayscale(1) contrast(0) brightness(1000%);
+    transition: $transition__component;
+  }
+
+  &__action {
+    text-align: center;
+  }
+}
