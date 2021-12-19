@@ -1,0 +1,30 @@
+#callback {
+  padding-bottom: 215px;
+
+  @include breakpoint($breakpoint-laptop--large) {
+    padding-bottom: 150px;
+  }
+
+  .container {
+    position: static;
+  }
+}
+
+.callback {
+  &__form {
+    max-width: 530px;
+  }
+
+  &__picture {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 1120px;
+
+    @include breakpoint($breakpoint-laptop--large) {
+      right: -60px;
+      width: 700px;
+    }
+  }
+}

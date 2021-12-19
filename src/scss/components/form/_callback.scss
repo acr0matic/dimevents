@@ -1,0 +1,12 @@
+.form-callback {
+  .row > div {
+    &:not(:last-child) {
+      margin-bottom: 45px;
+    }
+  }
+
+  .form__action {
+    margin-top: 100px;
+    text-align: center;
+  }
+}
