@@ -107,7 +107,7 @@
         <!-- /.header__contact -->
 
         <div class="header__action">
-          <button class="button button-outline">Оставить заявку</button>
+          <a href="#callback" class="button button-outline">Оставить заявку</a>
         </div>
         <!-- /.header__action -->
       </div>
@@ -610,12 +610,12 @@
         </h2>
 
         <div class="callback">
-          <form action="" data-target="callback" data-additional="event" class="callback__form form form-callback">
+          <form action="php/send.php" data-target="callback" data-additional="event" class="callback__form form form-callback">
             <div class="row">
               <div class="col-6">
                 <div class="input">
-                  <input placeholder="Имя" autocomplete="off" type="text" name="user__name" class="input__field">
-                  <img data-tippy-content="" class="input__warning" src="img/icons/misc/warning.svg" alt="">
+                  <input data-required placeholder="Имя" autocomplete="off" type="text" name="user_name" class="input__field">
+                  <img data-tippy-content="Имя не указано или указано с ошибкой" class="input__warning" src="img/icons/misc/warning.svg" alt="">
                 </div>
                 <!-- /.input -->
               </div>
@@ -623,17 +623,8 @@
 
               <div class="col-6">
                 <div class="input">
-                  <input placeholder="Телефон" autocomplete="off" type="tel" name="user__phone" class="input__field">
-                  <img data-tippy-content="" class="input__warning" src="img/icons/misc/warning.svg" alt="">
-                </div>
-                <!-- /.input -->
-              </div>
-              <!-- /.col-6 -->
-
-              <div class="col-6">
-                <div class="input input--error">
-                  <input placeholder="E-mail" autocomplete="off" type="email" name="user__email" class="input__field">
-                  <img data-tippy-content="" class="input__warning" src="img/icons/misc/warning.svg" alt="">
+                  <input data-required placeholder="Телефон" autocomplete="off" type="tel" name="user_phone" class="input__field">
+                  <img data-tippy-content="Телефон не указан или указан с ошибкой" class="input__warning" src="img/icons/misc/warning.svg" alt="">
                 </div>
                 <!-- /.input -->
               </div>
@@ -641,7 +632,16 @@
 
               <div class="col-6">
                 <div class="input">
-                  <input placeholder="Услуга" autocomplete="off" type="text" name="user__request" class="input__field">
+                  <input data-required placeholder="E-mail" autocomplete="off" type="email" name="user_email" class="input__field">
+                  <img data-tippy-content="Почта не указана или указана с ошибкой" class="input__warning" src="img/icons/misc/warning.svg" alt="">
+                </div>
+                <!-- /.input -->
+              </div>
+              <!-- /.col-6 -->
+
+              <div class="col-6">
+                <div class="input">
+                  <input placeholder="Услуга" autocomplete="off" type="text" name="user_request" class="input__field">
                   <img data-tippy-content="" class="input__warning" src="img/icons/misc/warning.svg" alt="">
                 </div>
                 <!-- /.input -->
@@ -738,11 +738,46 @@
     <!-- /.container -->
   </footer>
 
+  <div class="modal modal-success micromodal-slide" id="modal-success" aria-hidden="true">
+    <div class="modal__overlay" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <header class="modal__header">
+          <svg class="modal__close" data-micromodal-close width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.799805" y="34.7402" width="48" height="4.8" rx="2.4" transform="rotate(-45 0.799805 34.7402)" fill="white" />
+            <rect x="34.7412" y="38.1348" width="48" height="4.8" rx="2.4" transform="rotate(-135 34.7412 38.1348)" fill="white" />
+          </svg>
+        </header>
+
+        <main class="modal__content">
+          <div class="modal__picture">
+            <img src="img/icons/other/emoji.png" alt="" class="modal__image">
+          </div>
+          <!-- /.modal__pucture -->
+
+          <div class="modal__title">Спасибо</div>
+          <div class="modal__description">Мы скоро свяжемся</div>
+        </main>
+      </div>
+      <!-- /.modal__container -->
+    </div>
+    <!-- /.modal__overlay -->
+  </div>
+  <!-- /.modal -->
+
+
   <!-- Скрипты -->
   <!-- build:js js/script.min.js -->
   <script src="scripts/libraries/lazyload.js"></script>
   <script src="scripts/libraries/lodash.js"></script>
+  <script src="scripts/libraries/imask.js"></script>
+  <script src="scripts/libraries/forms.js"></script>
+  <script src="scripts/libraries/smoothScroll.js"></script>
+  <script src="scripts/libraries/popper.js"></script>
+  <script src="scripts/libraries/tippy.js"></script>
+  <script src="scripts/libraries/micromodal.min.js"></script>
+  <script src="scripts/libraries/swiper.js"></script>
 
+  <script src="scripts/base.js"></script>
   <script src="scripts/main.js"></script>
   <script src="scripts/service.js"></script>
   <!-- endbuild -->
