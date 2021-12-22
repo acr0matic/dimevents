@@ -1,0 +1,28 @@
+#social {
+  position: fixed;
+  z-index: $z-index-header;
+  right: 0;
+  bottom: 35px;
+
+  width: 100%;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__item {
+    transition: $transition__component;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}
