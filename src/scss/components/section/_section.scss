@@ -41,6 +41,10 @@
       font-size: $font-size__title--regular;
 
       transform: none;
+
+      @include breakpoint($breakpoint-laptop--large) {
+        font-size: $font-size__title--regular - 10;
+      }
     }
 
     &--center {

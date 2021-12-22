@@ -1,0 +1,113 @@
+#step {
+  @include breakpoint($breakpoint-laptop--large) {
+    .section__heading {
+      display: none;
+    }
+  }
+}
+
+.step {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+
+    width: 15%;
+
+    text-align: center;
+  }
+
+  &__picture {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 130px;
+
+    margin-bottom: 30px;
+
+    @include breakpoint($breakpoint-laptop--large) {
+      height: 110px;
+    }
+  }
+
+  &__icon {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title {
+    display: flex;
+    align-items: flex-end;
+    min-height: 82px;
+
+    font-size: $font-size__text--regular;
+    line-height: 150%;
+
+    @include breakpoint($breakpoint-laptop--large) {
+      min-height: 63px;
+      font-size: $font-size__text--small - 2;
+    }
+  }
+
+  &__line {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 50%;
+
+      display: block;
+      width: 100%;
+      height: 2px;
+
+      transform: translate(-50%, -50%);
+
+      background-color: $pallete-gray;
+    }
+  }
+
+  &__circle {
+    box-sizing: content-box;
+
+    position: relative;
+    z-index: 2;
+
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    background-color: #616161;
+
+    margin: 25px 0;
+
+    border-radius: 50%;
+    border: 6px solid $pallete-black;
+  }
+
+  &__description {
+    font-size: $font-size__text--regular;
+
+    @include breakpoint($breakpoint-laptop--large) {
+      font-size: $font-size__text--small - 2;
+    }
+  }
+}

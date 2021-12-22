@@ -22,4 +22,8 @@ h4 {
   line-height: 120%;
 
   text-transform: uppercase;
+
+  @include breakpoint($breakpoint-laptop--large) {
+    letter-spacing: 0.05em;
+  }
 }
