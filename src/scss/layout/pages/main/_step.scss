@@ -57,6 +57,10 @@
       min-height: 63px;
       font-size: $font-size__text--small - 2;
     }
+
+    @include breakpoint($breakpoint-laptop--medium) {
+      min-height: 85px;
+    }
   }
 
   &__line {

@@ -25,5 +25,11 @@
     @include breakpoint($breakpoint-laptop--large) {
       margin-right: 30px;
     }
+
+    a {
+      @include breakpoint($breakpoint-laptop--medium) {
+        font-size: 12px;
+      }
+    }
   }
 }

@@ -2,11 +2,19 @@
   .row > div {
     &:not(:last-child) {
       margin-bottom: 45px;
+
+      @include breakpoint($breakpoint-laptop--medium) {
+        margin-bottom: 30px;
+      }
     }
   }
 
   .form__action {
     margin-top: 100px;
     text-align: center;
+
+    @include breakpoint($breakpoint-laptop--medium) {
+      margin-top: 75px;
+    }
   }
 }

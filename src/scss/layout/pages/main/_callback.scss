@@ -5,6 +5,10 @@
     padding-bottom: 150px;
   }
 
+  @include breakpoint($breakpoint-laptop--medium) {
+    padding-bottom: 50px;
+  }
+
   .container {
     position: static;
   }
@@ -13,6 +17,10 @@
 .callback {
   &__form {
     max-width: 530px;
+
+    @include breakpoint($breakpoint-laptop--medium) {
+      max-width: 430px;
+    }
   }
 
   &__picture {
@@ -25,6 +33,10 @@
     @include breakpoint($breakpoint-laptop--large) {
       right: -60px;
       width: 700px;
+    }
+
+    @include breakpoint($breakpoint-laptop--medium) {
+      width: 560px;
     }
   }
 }

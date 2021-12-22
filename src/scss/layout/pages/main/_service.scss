@@ -11,6 +11,10 @@
       height: 600px;
     }
 
+    @include breakpoint($breakpoint-laptop--medium) {
+      height: 450px;
+    }
+
     @media (hover: hover) {
       &:hover {
         .service__poster {
@@ -83,6 +87,10 @@
 
     @include breakpoint($breakpoint-laptop--large) {
       font-size: $font-size__title--regular - 8;
+    }
+
+    @include breakpoint($breakpoint-laptop--medium) {
+      font-size: $font-size__title--regular - 12;
     }
   }
 

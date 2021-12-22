@@ -15,5 +15,9 @@
     @include breakpoint($breakpoint-laptop--large) {
       font-size: $font-size__title--large - 10;
     }
+
+    @include breakpoint($breakpoint-laptop--medium) {
+      font-size: $font-size__title--large - 20;
+    }
   }
 }

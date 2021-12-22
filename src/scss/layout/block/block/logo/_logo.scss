@@ -6,6 +6,10 @@
       @include breakpoint($breakpoint-laptop--large) {
         max-width: 55px;
       }
+
+      @include breakpoint($breakpoint-laptop--medium) {
+        max-width: 40px;
+      }
     }
   }
 

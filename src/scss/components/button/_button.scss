@@ -17,4 +17,9 @@ $border-radius: 4px;
   @include breakpoint($breakpoint-laptop--large) {
     font-size: 18px;
   }
+
+  @include breakpoint($breakpoint-laptop--medium) {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
 }

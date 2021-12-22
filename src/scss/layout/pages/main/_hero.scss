@@ -39,6 +39,10 @@
     @include breakpoint($breakpoint-laptop--large) {
       font-size: $font-size__text--large - 3;
     }
+
+    @include breakpoint($breakpoint-laptop--medium) {
+      font-size: $font-size__text--large - 6;
+    }
   }
 
   &__video {
