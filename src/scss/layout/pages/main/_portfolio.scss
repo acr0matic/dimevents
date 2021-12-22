@@ -1,10 +1,10 @@
-.partners {
+.portfolio {
   .row > div {
     display: flex;
 
     @media (hover: hover) {
       &:hover {
-        .partners__logo {
+        .portfolio__logo {
           filter: none;
           transform: scale(1.15);
         }
