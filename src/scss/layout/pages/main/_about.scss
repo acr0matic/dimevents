@@ -1,4 +1,5 @@
 #about {
+  overflow: hidden;
 }
 
 .about {
@@ -19,8 +20,15 @@
     @include breakpoint($breakpoint-laptop--large) {
       margin-bottom: 15px;
     }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: 20px;
+    }
   }
 
   &__description {
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: 12px;
+    }
   }
 }

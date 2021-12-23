@@ -160,13 +160,13 @@
         <div class="hero">
           <div class="hero__content">
             <h1 class="hero__title page__title">
-              EVENT-Агентство
+              EVENT-<br class="mobile">Агентство
               <br>
               полного цикла
             </h1>
 
             <div class="hero__text">
-              <p class="hero__description me-5">
+              <p class="hero__description me-lg-5 text-end text-lg-start">
                 “Даша и Медведь” — креативное
                 <br>
                 event-агентство: комфортная
@@ -177,7 +177,7 @@
               </p>
               <!-- /.hero__description -->
 
-              <p class="hero__description">
+              <p class="hero__description mb-5 mb-lg-0">
                 Мы — выручай комната в event-
                 <br>
                 сфере, не ограниченные
@@ -189,6 +189,8 @@
               <!-- /.hero__description -->
             </div>
             <!-- /.hero__text -->
+
+            <button class="hero__button button button-outline">Оставить заявку</button>
           </div>
           <!-- /.hero__content -->
 
@@ -208,10 +210,10 @@
 
     <section id="service" class="section">
       <div class="container">
-        <h2 class="section__title">Услуги</h2>
+        <h2 class="section__title section__title--mobile">Услуги</h2>
         <div class="service">
           <div class="row">
-            <div class="col-4 pe-0">
+            <div class="col-12 col-lg-4 mb-4 mb-lg-0 px-3 pe-lg-0">
               <div class="service__item">
                 <div class="service__media">
                   <img class="service__poster image" src="img/pictures/event/1.jpg" alt="">
@@ -242,7 +244,7 @@
             </div>
             <!-- /.col-4 -->
 
-            <div class="col-4 px-0">
+            <div class="col-12 col-lg-4 mb-4 mb-lg-0 px-3 px-lg-0">
               <div class="service__item">
                 <div class="service__media">
                   <img class="service__poster image" src="img/pictures/event/2.jpg" alt="">
@@ -270,7 +272,7 @@
             </div>
             <!-- /.col-4 -->
 
-            <div class="col-4 ps-0">
+            <div class="col-12 col-lg-4 px-3 ps-lg-0">
               <div class="service__item">
                 <div class="service__media">
                   <img class="service__poster image" src="img/pictures/event/3.jpg" alt="">
@@ -307,74 +309,77 @@
 
     <section id="about" class="section">
       <div class="container">
-        <h2 class="section__title">Почему мы?</h2>
+        <h2 class="section__title section__title--mobile">Почему мы?</h2>
         <div class="about">
-          <div class="row">
-            <div class="col-3">
-              <div class="about__item">
-                <div class="about__picture">
-                  <img src="img/pictures/advantage/1.jpg" alt="" class="about__image image image--cover">
+          <div class="swiper swiper--mobile slider slider-about">
+            <div class="swiper-wrapper row">
+              <div class="swiper-slide col-3">
+                <div class="about__item">
+                  <div class="about__picture">
+                    <img src="img/pictures/advantage/1.jpg" alt="" class="about__image image image--cover">
+                  </div>
+                  <!-- /.about__picture -->
+
+                  <h3 class="about__title">КОНЦЕПЦИЯ</h3>
+                  <p class="about__description">
+                    Наша концепция — управление впечатлениями. Мы знаем, откуда берутся самые незабываемые эмоции. Мы не про “ярко” и “памятно”, а про “феерично” и “неповторимо”.
+                  </p>
                 </div>
-                <!-- /.about__picture -->
-
-                <h3 class="about__title">КОНЦЕПЦИЯ</h3>
-                <p class="about__description">
-                  Наша концепция — управление впечатлениями. Мы знаем, откуда берутся самые незабываемые эмоции. Мы не про “ярко” и “памятно”, а про “феерично” и “неповторимо”.
-                </p>
+                <!-- /.about__item -->
               </div>
-              <!-- /.about__item -->
-            </div>
-            <!-- /.col-3 -->
+              <!-- /.col-3 -->
 
-            <div class="col-3">
-              <div class="about__item">
-                <div class="about__picture">
-                  <img src="img/pictures/advantage/2.jpg" alt="" class="about__image image image--cover">
+              <div class="swiper-slide col-3">
+                <div class="about__item">
+                  <div class="about__picture">
+                    <img src="img/pictures/advantage/2.jpg" alt="" class="about__image image image--cover">
+                  </div>
+                  <!-- /.about__picture -->
+
+                  <h3 class="about__title">ДЕТАЛИ</h3>
+                  <p class="about__description">
+                    Дьявол кроется в мелочах, а event в деталях. Мы продумываем каждую деталь за вас: от музыкального сопровождения до навигации на площадке, от декора до сценария мероприятия.
+                  </p>
                 </div>
-                <!-- /.about__picture -->
-
-                <h3 class="about__title">ДЕТАЛИ</h3>
-                <p class="about__description">
-                  Дьявол кроется в мелочах, а event в деталях. Мы продумываем каждую деталь за вас: от музыкального сопровождения до навигации на площадке, от декора до сценария мероприятия.
-                </p>
+                <!-- /.about__item -->
               </div>
-              <!-- /.about__item -->
-            </div>
-            <!-- /.col-3 -->
+              <!-- /.col-3 -->
 
-            <div class="col-3">
-              <div class="about__item">
-                <div class="about__picture">
-                  <img src="img/pictures/advantage/3.jpg" alt="" class="about__image image image--cover">
+              <div class="swiper-slide col-3">
+                <div class="about__item">
+                  <div class="about__picture">
+                    <img src="img/pictures/advantage/3.jpg" alt="" class="about__image image image--cover">
+                  </div>
+                  <!-- /.about__picture -->
+
+                  <h3 class="about__title">ПАРТНЁРСТВО</h3>
+                  <p class="about__description">
+                    Площадки, кейтеринг, декор, технический продакшн, фото и видеосъемка — мы выстраиваем крепкие взаимоотношения с партнёрами, создавая сильную команду, для который нет слова “невозможно”.
+                  </p>
                 </div>
-                <!-- /.about__picture -->
-
-                <h3 class="about__title">ПАРТНЁРСТВО</h3>
-                <p class="about__description">
-                  Площадки, кейтеринг, декор, технический продакшн, фото и видеосъемка — мы выстраиваем крепкие взаимоотношения с партнёрами, создавая сильную команду, для который нет слова “невозможно”.
-                </p>
+                <!-- /.about__item -->
               </div>
-              <!-- /.about__item -->
-            </div>
-            <!-- /.col-3 -->
+              <!-- /.col-3 -->
 
-            <div class="col-3">
-              <div class="about__item">
-                <div class="about__picture">
-                  <img src="img/pictures/advantage/4.jpg" alt="" class="about__image image image--cover">
+              <div class="swiper-slide col-3">
+                <div class="about__item">
+                  <div class="about__picture">
+                    <img src="img/pictures/advantage/4.jpg" alt="" class="about__image image image--cover">
+                  </div>
+                  <!-- /.about__picture -->
+
+                  <h3 class="about__title">ПРОЗРАЧНОСТЬ</h3>
+                  <p class="about__description">
+                    Наша философия - это простые и работающие решения. Мы дружим с клиентами, обеспечивая прозрачную и понятную коммуникацию.
+                  </p>
                 </div>
-                <!-- /.about__picture -->
-
-                <h3 class="about__title">ПРОЗРАЧНОСТЬ</h3>
-                <p class="about__description">
-                  Наша философия - это простые и работающие решения. Мы дружим с клиентами, обеспечивая прозрачную и понятную коммуникацию.
-                </p>
+                <!-- /.about__item -->
               </div>
-              <!-- /.about__item -->
+              <!-- /.col-3 -->
             </div>
-            <!-- /.col-3 -->
+            <!-- /.row -->
           </div>
-          <!-- /.row -->
+          <!-- /.swiper slider-about slider--mobile -->
         </div>
         <!-- /.about -->
       </div>
@@ -525,62 +530,62 @@
         <div class="portfolio">
           <div class="portfolio__wrapper">
             <div class="row">
-              <div class="col-2 mb-5">
+              <div class="col-6 col-lg-2 mb-4 mb-lg-5">
                 <img src="img/logotypes/adidas.png" alt="" class="portfolio__logo">
               </div>
               <!-- /.col-2 -->
 
-              <div class="col-2 mb-5">
+              <div class="col-6 col-lg-2 mb-4 mb-lg-5">
                 <img src="img/logotypes/hm.png" alt="" class="portfolio__logo">
               </div>
               <!-- /.col-2 -->
 
-              <div class="col-2 mb-5">
+              <div class="col-6 col-lg-2 mb-4 mb-lg-5">
                 <img src="img/logotypes/heineken.png" alt="" class="portfolio__logo">
               </div>
               <!-- /.col-2 -->
 
-              <div class="col-2 mb-5">
+              <div class="col-6 col-lg-2 mb-4 mb-lg-5">
                 <img src="img/logotypes/evraz.png" alt="" class="portfolio__logo">
               </div>
               <!-- /.col-2 -->
 
-              <div class="col-2 mb-5">
+              <div class="col-6 col-lg-2 mb-4 mb-lg-5">
                 <img src="img/logotypes/mercedes.png" alt="" class="portfolio__logo">
               </div>
               <!-- /.col-2 -->
 
-              <div class="col-2 mb-5">
+              <div class="col-6 col-lg-2 mb-4 mb-lg-5">
                 <img src="img/logotypes/accenture.png" alt="" class="portfolio__logo">
               </div>
               <!-- /.col-2 -->
 
-              <div class="col-2">
+              <div class="col-6 col-lg-2 mb-4 mb-lg-0">
                 <img src="img/logotypes/yandex.png" alt="" class="portfolio__logo">
               </div>
               <!-- /.col-2 -->
 
-              <div class="col-2">
+              <div class="col-6 col-lg-2 mb-4 mb-lg-0">
                 <img src="img/logotypes/oliver.png" alt="" class="portfolio__logo">
               </div>
               <!-- /.col-2 -->
 
-              <div class="col-2">
+              <div class="col-6 col-lg-2 mb-4 mb-lg-0">
                 <img src="img/logotypes/allergan.png" alt="" class="portfolio__logo">
               </div>
               <!-- /.col-2 -->
 
-              <div class="col-2">
+              <div class="col-6 col-lg-2 mb-4 mb-lg-0">
                 <img src="img/logotypes/da.png" alt="" class="portfolio__logo portfolio__logo--no-brightness">
               </div>
               <!-- /.col-2 -->
 
-              <div class="col-2">
+              <div class="col-6 col-lg-2">
                 <img src="img/logotypes/rusal.png" alt="" class="portfolio__logo">
               </div>
               <!-- /.col-2 -->
 
-              <div class="col-2">
+              <div class="col-6 col-lg-2">
                 <img src="img/logotypes/mod.png" alt="" class="portfolio__logo">
               </div>
               <!-- /.col-2 -->
@@ -615,7 +620,7 @@
         <div class="callback">
           <form action="php/send.php" data-target="callback" data-additional="event" class="callback__form form form-callback">
             <div class="row">
-              <div class="col-6">
+              <div class="col-12 col-lg-6">
                 <div class="input">
                   <input data-required placeholder="Имя" autocomplete="off" type="text" name="user_name" class="input__field">
                   <img data-tippy-content="Имя не указано или указано с ошибкой" class="input__warning" src="img/icons/misc/warning.svg" alt="">
@@ -624,7 +629,7 @@
               </div>
               <!-- /.col-6 -->
 
-              <div class="col-6">
+              <div class="col-12 col-lg-6">
                 <div class="input">
                   <input data-required placeholder="Телефон" autocomplete="off" type="tel" name="user_phone" class="input__field">
                   <img data-tippy-content="Телефон не указан или указан с ошибкой" class="input__warning" src="img/icons/misc/warning.svg" alt="">
@@ -633,7 +638,7 @@
               </div>
               <!-- /.col-6 -->
 
-              <div class="col-6">
+              <div class="col-12 col-lg-6">
                 <div class="input">
                   <input data-required placeholder="E-mail" autocomplete="off" type="email" name="user_email" class="input__field">
                   <img data-tippy-content="Почта не указана или указана с ошибкой" class="input__warning" src="img/icons/misc/warning.svg" alt="">
@@ -642,7 +647,7 @@
               </div>
               <!-- /.col-6 -->
 
-              <div class="col-6">
+              <div class="col-12 col-lg-6">
                 <div class="input">
                   <input placeholder="Услуга" autocomplete="off" type="text" name="user_request" class="input__field">
                   <img data-tippy-content="" class="input__warning" src="img/icons/misc/warning.svg" alt="">
@@ -686,7 +691,7 @@
         <div class="footer__content">
           <div class="footer__contact">
             <div class="contact">
-              <a href="tel:+79167906948" class="contact__phone link me-4 me-xxl-5">+ 7 (916) 790-69-48</a>
+              <a href="tel:+79167906948" class="contact__phone link mb-3 mb-lg-0 me-4 me-xxl-5">+ 7 (916) 790-69-48</a>
               <a href="mailto:hello@dim.ru" class="contact__email link">hello@dim.ru</a>
             </div>
             <!-- /.contact -->
@@ -721,7 +726,7 @@
           <!-- /.header__nav -->
 
           <div class="footer__info">
-            <span class="footer__copyright me-4">© Даша и медведь 2022</span>
+            <span class="footer__copyright mb-4 mb-lg-0 me-lg-4">© Даша и медведь 2022</span>
             <a href="" class="footer__privacy link">Политика обработки данных</a>
           </div>
           <!-- /.footer__copyright -->
@@ -767,7 +772,6 @@
   </div>
   <!-- /.modal -->
 
-
   <!-- Скрипты -->
   <!-- build:js js/script.min.js -->
   <script src="scripts/libraries/lazyload.js"></script>
@@ -784,6 +788,7 @@
   <script src="scripts/main.js"></script>
   <script src="scripts/header.js"></script>
   <script src="scripts/service.js"></script>
+  <script src="scripts/slider.js"></script>
   <!-- endbuild -->
 </body>
 

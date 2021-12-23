@@ -15,6 +15,15 @@
       height: 450px;
     }
 
+    @include breakpoint($breakpoint-mobile--large) {
+      height: 480px;
+      border-radius: 12px;
+    }
+
+    @include breakpoint($breakpoint-mobile) {
+      height: 530px;
+    }
+
     @media (hover: hover) {
       &:hover {
         .service__poster {
@@ -56,6 +65,10 @@
     z-index: 2;
 
     transition: $transition__component;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      display: none;
+    }
   }
 
   &__video {
@@ -79,6 +92,10 @@
 
     text-align: center;
     transition: $transition__component;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      padding: 0 10px;
+    }
   }
 
   &__title {
@@ -92,6 +109,14 @@
     @include breakpoint($breakpoint-laptop--medium) {
       font-size: $font-size__title--regular - 12;
     }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: 20px;
+
+      br {
+        display: none;
+      }
+    }
   }
 
   &__description {
@@ -100,5 +125,12 @@
     opacity: 0;
 
     transition: $transition__component;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      max-height: initial;
+      opacity: 1;
+
+      font-size: 12px;
+    }
   }
 }

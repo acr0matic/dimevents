@@ -19,5 +19,17 @@
     @include breakpoint($breakpoint-laptop--medium) {
       font-size: $font-size__title--large - 20;
     }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: $font-size__text--large;
+    }
+
+    .mobile {
+      display: none;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        display: block;
+      }
+    }
   }
 }

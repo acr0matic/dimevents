@@ -6,6 +6,10 @@
       @include breakpoint($breakpoint-laptop--medium) {
         margin-bottom: 30px;
       }
+
+      @include breakpoint($breakpoint-mobile--large) {
+        margin-bottom: 35px;
+      }
     }
   }
 

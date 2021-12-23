@@ -19,6 +19,10 @@
     @include breakpoint($breakpoint-laptop--large) {
       margin-bottom: 75px;
     }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      margin-bottom: 60px;
+    }
   }
 
   &__logo {
@@ -30,6 +34,10 @@
 
     &--no-brightness {
       filter: grayscale(1);
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      transform: scale(0.7);
     }
   }
 

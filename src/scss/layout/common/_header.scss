@@ -15,6 +15,12 @@
 .header {
   @include flex;
 
+  &__nav {
+    @include breakpoint($breakpoint-mobile--large) {
+      display: none;
+    }
+  }
+
   &__logo {
     margin: 30px auto 0;
   }
@@ -26,10 +32,20 @@
       margin-right: 30px;
     }
 
+    @include breakpoint($breakpoint-mobile--large) {
+      display: none;
+    }
+
     a {
       @include breakpoint($breakpoint-laptop--medium) {
         font-size: 12px;
       }
+    }
+  }
+
+  &__action {
+    @include breakpoint($breakpoint-mobile--large) {
+      display: none;
     }
   }
 }

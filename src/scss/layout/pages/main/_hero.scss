@@ -5,6 +5,10 @@
 #hero {
   height: 100vh;
 
+  @include breakpoint($breakpoint-mobile--large) {
+    height: 680px;
+  }
+
   .container {
     @include flex($justify: center);
     height: 100%;
@@ -21,15 +25,39 @@
     width: max-content;
 
     transform: translate(-50%, -50%);
+
+    @include breakpoint($breakpoint-mobile--large) {
+      width: 100%;
+      margin-top: 30px;
+      padding: 0 15px;
+    }
+  }
+
+  &__button {
+    display: none;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      display: block;
+      margin: 50px auto 0;
+    }
   }
 
   &__title {
     text-align: center;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      text-align: left;
+    }
   }
 
   &__text {
     @include flex($justify: center);
     margin-top: 45px;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      flex-direction: column-reverse;
+      align-items: stretch;
+    }
   }
 
   &__description {
@@ -42,6 +70,10 @@
 
     @include breakpoint($breakpoint-laptop--medium) {
       font-size: $font-size__text--large - 6;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: $font-size__text--small;
     }
   }
 

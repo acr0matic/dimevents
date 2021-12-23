@@ -9,6 +9,10 @@
     padding-bottom: 50px;
   }
 
+  @include breakpoint($breakpoint-laptop--medium) {
+    margin-bottom: 75px;
+  }
+
   .container {
     position: static;
   }
@@ -37,6 +41,10 @@
 
     @include breakpoint($breakpoint-laptop--medium) {
       width: 560px;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      display: none;
     }
   }
 }

@@ -25,6 +25,10 @@
       font-size: 12px;
     }
 
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: $font-size__text--regular;
+    }
+
     &::after {
       content: "";
 
@@ -51,5 +55,19 @@
   }
 
   &--footer {
+    @include breakpoint($breakpoint-mobile--large) {
+      .nav__list {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .nav__item {
+        margin-right: 0;
+
+        &:not(:last-child) {
+          margin-bottom: 35px;
+        }
+      }
+    }
   }
 }
