@@ -33,3 +33,29 @@
     }
   }
 }
+
+.header-cloned {
+  position: fixed !important;
+  height: initial !important;
+  background: #404040;
+
+  padding: 10px 0;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: $transition__component;
+
+  .header__logo {
+    margin: 0 auto;
+
+    img {
+      max-width: 45px;
+    }
+  }
+}
+
+.header-visible {
+  opacity: 1;
+  visibility: visible;
+}
