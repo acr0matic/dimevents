@@ -62,6 +62,13 @@
   <header id="header">
     <div class="container">
       <div class="header">
+        <div class="header__mobile">
+          <a href="tel:">
+            <img src="img/icons/other/phone.svg" alt="">
+          </a>
+        </div>
+        <!-- /.header__mobile -->
+
         <div class="header__nav">
           <nav class="nav nav--header">
             <ul class="nav__list">
@@ -110,6 +117,11 @@
           <a href="#callback" class="button button-outline">Оставить заявку</a>
         </div>
         <!-- /.header__action -->
+
+        <div class="header__mobile">
+          <img src="img/icons/other/menu.svg" alt="">
+        </div>
+        <!-- /.header__mobile -->
       </div>
       <!-- /.header -->
     </div>
@@ -398,6 +410,11 @@
         <div class="step">
           <div class="step__wrapper">
             <div class="step__item">
+              <div class="step__info">
+                <img src="img/icons/other/info.svg" alt="">
+              </div>
+              <!-- /.step__info -->
+
               <div class="step__picture">
                 <img class="step__icon image" src="img/pictures/step/1.png" alt="">
               </div>
@@ -417,6 +434,11 @@
             <!-- /.step__item -->
 
             <div class="step__item">
+              <div class="step__info">
+                <img src="img/icons/other/info.svg" alt="">
+              </div>
+              <!-- /.step__info -->
+
               <div class="step__picture">
                 <img class="step__icon image" src="img/pictures/step/2.png" alt="">
               </div>
@@ -436,6 +458,11 @@
             <!-- /.step__item -->
 
             <div class="step__item">
+              <div class="step__info">
+                <img src="img/icons/other/info.svg" alt="">
+              </div>
+              <!-- /.step__info -->
+
               <div class="step__picture">
                 <img class="step__icon image" src="img/pictures/step/3.png" alt="">
               </div>
@@ -455,6 +482,11 @@
             <!-- /.step__item -->
 
             <div class="step__item">
+              <div class="step__info">
+                <img src="img/icons/other/info.svg" alt="">
+              </div>
+              <!-- /.step__info -->
+
               <div class="step__picture">
                 <img class="step__icon image" src="img/pictures/step/4.png" alt="">
               </div>
@@ -474,6 +506,11 @@
             <!-- /.step__item -->
 
             <div class="step__item">
+              <div class="step__info">
+                <img src="img/icons/other/info.svg" alt="">
+              </div>
+              <!-- /.step__info -->
+
               <div class="step__picture">
                 <img class="step__icon image" src="img/pictures/step/5.png" alt="">
               </div>
@@ -493,6 +530,11 @@
             <!-- /.step__item -->
 
             <div class="step__item">
+              <div class="step__info">
+                <img src="img/icons/other/info.svg" alt="">
+              </div>
+              <!-- /.step__info -->
+
               <div class="step__picture">
                 <img class="step__icon image" src="img/pictures/step/6.png" alt="">
               </div>
@@ -751,8 +793,8 @@
       <div class="modal__container" role="dialog" aria-modal="true">
         <header class="modal__header">
           <svg class="modal__close" data-micromodal-close width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0.799805" y="34.7402" width="48" height="4.8" rx="2.4" transform="rotate(-45 0.799805 34.7402)" fill="white" />
-            <rect x="34.7412" y="38.1348" width="48" height="4.8" rx="2.4" transform="rotate(-135 34.7412 38.1348)" fill="white" />
+            <rect data-micromodal-close x="0.799805" y="34.7402" width="48" height="4.8" rx="2.4" transform="rotate(-45 0.799805 34.7402)" fill="white" />
+            <rect data-micromodal-close x="34.7412" y="38.1348" width="48" height="4.8" rx="2.4" transform="rotate(-135 34.7412 38.1348)" fill="white" />
           </svg>
         </header>
 
@@ -763,6 +805,26 @@
           <!-- /.modal__pucture -->
 
           <div class="modal__title">Спасибо</div>
+          <div class="modal__description">Мы скоро свяжемся</div>
+        </main>
+      </div>
+      <!-- /.modal__container -->
+    </div>
+    <!-- /.modal__overlay -->
+  </div>
+  <!-- /.modal -->
+
+  <div class="modal modal--mobile-bottom modal-step micromodal-slide" id="modal-step" aria-hidden="true">
+    <div class="modal__overlay" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <header class="modal__header">
+          <svg class="modal__close" data-micromodal-close width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect data-micromodal-close x="0.799805" y="34.7402" width="48" height="4.8" rx="2.4" transform="rotate(-45 0.799805 34.7402)" fill="white" />
+            <rect data-micromodal-close x="34.7412" y="38.1348" width="48" height="4.8" rx="2.4" transform="rotate(-135 34.7412 38.1348)" fill="white" />
+          </svg>
+        </header>
+
+        <main class="modal__content">
           <div class="modal__description">Мы скоро свяжемся</div>
         </main>
       </div>
@@ -789,6 +851,7 @@
   <script src="scripts/header.js"></script>
   <script src="scripts/service.js"></script>
   <script src="scripts/slider.js"></script>
+  <script src="scripts/step.js"></script>
   <!-- endbuild -->
 </body>
 

@@ -6,6 +6,11 @@
 
     max-width: 1080px;
     height: 530px;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      max-width: 90%;
+      height: 190px;
+    }
   }
 
   .modal__content {
@@ -17,16 +22,34 @@
 
   .modal__picture {
     margin-bottom: 30px;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      margin-bottom: 15px;
+    }
+  }
+
+  .modal__image {
+    @include breakpoint($breakpoint-mobile--large) {
+      width: 48px;
+    }
   }
 
   .modal__title {
     margin-bottom: 5px;
     font-size: 38px;
     font-weight: $weight-ExtraBold;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: 18px;
+    }
   }
 
   .modal__description {
     font-size: 30px;
     text-transform: lowercase;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: 14px;
+    }
   }
 }

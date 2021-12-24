@@ -15,6 +15,14 @@
 .header {
   @include flex;
 
+  &__mobile {
+    display: none;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      display: block;
+    }
+  }
+
   &__nav {
     @include breakpoint($breakpoint-mobile--large) {
       display: none;
@@ -53,7 +61,7 @@
 .header-cloned {
   position: fixed !important;
   height: initial !important;
-  background: #404040;
+  background-color: #404040;
 
   padding: 10px 0;
 
@@ -67,6 +75,10 @@
 
     img {
       max-width: 45px;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        max-width: 35px;
+      }
     }
   }
 }
