@@ -1,47 +1,14 @@
 .mobile-menu {
   position: fixed;
+  z-index: 200;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 40;
 
   height: 100vh;
 
   visibility: hidden;
-
-  &__overlay {
-    width: 100%;
-    height: 100%;
-
-    visibility: hidden;
-    background-color: rgba($color: #000, $alpha: 50%);
-    opacity: 0;
-
-    transition: 0.3s ease;
-  }
-
-  &__wrapper {
-    position: absolute;
-    top: -100%;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-    max-height: 530px;
-
-    padding: 100px 30px 40px;
-
-    overflow: auto;
-    background-color: #fff;
-
-    transition: 0.5s ease-out;
-  }
-
-  &__button {
-    display: block;
-    margin: 30px auto 0;
-  }
 
   &--open {
     visibility: visible;
@@ -52,7 +19,72 @@
     }
 
     .mobile-menu__wrapper {
-      top: 0;
+      bottom: 0;
     }
+  }
+
+  &__overlay {
+    width: 100%;
+    height: 100%;
+
+    visibility: hidden;
+    background-color: rgba($color: #ffffff, $alpha: 0.3);
+    opacity: 0;
+
+    transition: 0.3s ease;
+  }
+
+  &__wrapper {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+
+    width: 100%;
+    max-height: 540px;
+    overflow: auto;
+
+    padding: 80px 15px 50px;
+    border-radius: 12px 12px 0 0;
+
+    background-color: $pallete-black;
+
+    transition: 0.5s ease-out;
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+
+    .link {
+      padding: 20px 0;
+      font-size: 18px;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #2a2a2a;
+      }
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+
+    width: 40px;
+    height: 40px;
+
+    padding: 8px;
+    border-radius: 8px;
+    background-color: $pallete-gray;
+  }
+
+  &__back {
+    position: absolute;
+    top: 25px;
+    left: 15px;
+  }
+
+  .social {
+    justify-content: space-between;
   }
 }

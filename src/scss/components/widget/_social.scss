@@ -5,6 +5,10 @@
   bottom: 35px;
 
   width: 100%;
+
+  @include breakpoint($breakpoint-mobile--large) {
+    display: none;
+  }
 }
 
 .social {

@@ -41,11 +41,11 @@
   <meta name="robots" content="index,follow" />
 
   <!-- Покраска адресной строки в мобильных Chrome, Firefox OS и Opera -->
-  <meta name="theme-color" content="#4285f4" />
+  <meta name="theme-color" content="#1f1f1f" />
 
   <!-- Покраска для iOS Safari -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="#4285f4">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#1f1f1f">
 
   <!-- Место для счетков и аналитики -->
 
@@ -63,7 +63,7 @@
     <div class="container">
       <div class="header">
         <div class="header__mobile">
-          <a href="tel:">
+          <a href="tel:+79167906948">
             <img src="img/icons/other/phone.svg" alt="">
           </a>
         </div>
@@ -119,7 +119,7 @@
         <!-- /.header__action -->
 
         <div class="header__mobile">
-          <img src="img/icons/other/menu.svg" alt="">
+          <img class="header__menu" src="img/icons/other/menu.svg" alt="">
         </div>
         <!-- /.header__mobile -->
       </div>
@@ -165,6 +165,94 @@
   </div>
   <!-- /.social -->
 
+  <div id="mobile-menu" class="mobile-menu">
+    <div class="mobile-menu__overlay"></div>
+
+    <div class="mobile-menu__container effect-fade effect-fade--bottom effect-fade--short">
+      <div class="mobile-menu__wrapper">
+        <svg class="mobile-menu__close" data-micromodal-close width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect data-micromodal-close x="0.799805" y="34.7402" width="48" height="4.8" rx="2.4" transform="rotate(-45 0.799805 34.7402)" fill="white" />
+          <rect data-micromodal-close x="34.7412" y="38.1348" width="48" height="4.8" rx="2.4" transform="rotate(-135 34.7412 38.1348)" fill="white" />
+        </svg>
+
+        <nav class="mobile-menu__nav nav nav--mobile mb-5">
+          <ul class="nav__list">
+            <li class="nav__item mb-3"><a href="#service" class="nav__link">Услуги</a></li>
+            <li class="nav__item mb-3"><a href="#about" class="nav__link">Почему мы</a></li>
+            <li class="nav__item mb-3"><a href="#step" class="nav__link">Этапы работы</a></li>
+            <li class="nav__item mb-3"><a href="#portfolio" class="nav__link">Портфолио</a></li>
+            <li class="nav__item"><span class="nav__link nav__link--contact">Контакты</span></li>
+          </ul>
+        </nav>
+
+        <div class="mobile-menu__action">
+          <div class="social">
+            <div class="social__item">
+              <a href="">
+                <img src="img/social/instragram.svg" alt="" class="social__icon">
+              </a>
+            </div>
+            <!-- /.social__item -->
+
+            <div class="social__item">
+              <a href="">
+                <img src="img/social/facebook.svg" alt="" class="social__icon">
+              </a>
+            </div>
+            <!-- /.social__item -->
+
+            <div class="social__item">
+              <a href="">
+                <img src="img/social/whatsapp.svg" alt="" class="social__icon">
+              </a>
+            </div>
+            <!-- /.social__item -->
+
+            <div class="social__item">
+              <a href="">
+                <img src="img/social/telegram.svg" alt="" class="social__icon">
+              </a>
+            </div>
+            <!-- /.social__item -->
+          </div>
+          <!-- /.social -->
+        </div>
+        <!-- /.mobile-menu__action -->
+      </div>
+      <!-- /.mobile-menu__wrapper -->
+    </div>
+    <!-- /.mobile-menu__container -->
+  </div>
+  <!-- /.mobile-menu -->
+
+  <div id="mobile-contact" class="mobile-menu">
+    <div class="mobile-menu__overlay"></div>
+
+    <div class="mobile-menu__container effect-fade effect-fade--bottom effect-fade--short">
+      <div class="mobile-menu__wrapper pb-2 pt-5">
+        <svg class="mobile-menu__back" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4.66699" y="18.166" width="30" height="3" rx="1.5" fill="white" />
+          <rect x="4" y="19.666" width="11.6081" height="3" rx="1.5" transform="rotate(-45 4 19.666)" fill="white" />
+          <rect x="6.12109" y="17.5449" width="11.6081" height="3" rx="1.5" transform="rotate(45 6.12109 17.5449)" fill="white" />
+        </svg>
+
+        <svg class="mobile-menu__close" data-micromodal-close width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect data-micromodal-close x="0.799805" y="34.7402" width="48" height="4.8" rx="2.4" transform="rotate(-45 0.799805 34.7402)" fill="white" />
+          <rect data-micromodal-close x="34.7412" y="38.1348" width="48" height="4.8" rx="2.4" transform="rotate(-135 34.7412 38.1348)" fill="white" />
+        </svg>
+
+        <div class="mobile-menu__contact mt-5">
+          <a href="tel:+7916)7906948" class="link">+ 7 (916) 790-69-48</a>
+          <a href="mailto:hello@dim.ru" class="link">hello@dim.ru</a>
+        </div>
+        <!-- /.mobile-menu__contact -->
+      </div>
+      <!-- /.mobile-menu__wrapper -->
+    </div>
+    <!-- /.mobile-menu__container -->
+  </div>
+  <!-- /.mobile-menu -->
+
   <!-- Основной контент -->
   <main>
     <section id="hero" class="section section--primary">
@@ -202,7 +290,7 @@
             </div>
             <!-- /.hero__text -->
 
-            <button class="hero__button button button-outline">Оставить заявку</button>
+            <a href="#callback" class="hero__button button button-outline text-center">Оставить заявку</a>
           </div>
           <!-- /.hero__content -->
 
