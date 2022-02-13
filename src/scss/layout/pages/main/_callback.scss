@@ -34,8 +34,12 @@
 
     width: 1120px;
 
-    @include breakpoint($breakpoint-laptop--large) {
+    @include breakpoint($breakpoint-laptop--largest) {
       right: -60px;
+      width: 900px;
+    }
+
+    @include breakpoint($breakpoint-laptop--large) {
       width: 700px;
     }
 

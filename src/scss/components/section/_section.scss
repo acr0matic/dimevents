@@ -40,6 +40,10 @@
 
     color: $color-text__gray;
 
+    @include breakpoint($breakpoint-laptop--largest) {
+      left: -50px;
+    }
+
     @include breakpoint($breakpoint-laptop--large) {
       position: static;
       margin-bottom: 45px;
@@ -61,7 +65,7 @@
 
       transform: none;
 
-      @include breakpoint($breakpoint-laptop--large) {
+      @include breakpoint($breakpoint-laptop--largest) {
         font-size: $font-size__title--regular - 10;
       }
 

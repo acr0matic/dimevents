@@ -147,9 +147,9 @@ class Form {
     data.append('target', target);
     if (additional) data.append('additional', additional);
 
-    for (var pair of data.entries()) {
-      console.log(pair[0]+ ', ' + pair[1]);
-    }
+    // for (var pair of data.entries()) {
+    //   console.log(pair[0]+ ', ' + pair[1]);
+    // }
 
     try {
       let response = await fetch(this.action, {

@@ -55,7 +55,7 @@
     margin-top: 45px;
 
     @include breakpoint($breakpoint-mobile--large) {
-      flex-direction: column-reverse;
+      flex-direction: column;
       align-items: stretch;
     }
   }
@@ -64,7 +64,7 @@
     font-size: $font-size__text--large;
     font-weight: $weight-SemiBold;
 
-    @include breakpoint($breakpoint-laptop--large) {
+    @include breakpoint($breakpoint-laptop--largest) {
       font-size: $font-size__text--large - 3;
     }
 

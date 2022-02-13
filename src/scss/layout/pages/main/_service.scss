@@ -7,7 +7,7 @@
     height: 800px;
     overflow: hidden;
 
-    @include breakpoint($breakpoint-laptop--large) {
+    @include breakpoint($breakpoint-laptop--largest) {
       height: 600px;
     }
 
@@ -102,7 +102,7 @@
     margin-bottom: 25px;
     font-size: $font-size__title--regular;
 
-    @include breakpoint($breakpoint-laptop--large) {
+    @include breakpoint($breakpoint-laptop--largest) {
       font-size: $font-size__title--regular - 8;
     }
 
